@@ -15,6 +15,9 @@
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinations": true,
-    "stepDefinitions": "cypress/e2e/step_definition/"
+    "stepDefinitions": "cypress/e2e/step_definition/**/*.js"
+  },
+  "dependencies": {
+    "date-fns": "^3.6.0"
   }
 }

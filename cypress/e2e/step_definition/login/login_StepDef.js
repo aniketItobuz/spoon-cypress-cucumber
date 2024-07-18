@@ -1,5 +1,5 @@
 /// <reference types = 'cypress'/>
-import Login from "../pages/login";
+import Login from "../../pages/login/login";
 import { Given, When, Then} from "cypress-cucumber-preprocessor/steps";
 const l = new Login();
 
