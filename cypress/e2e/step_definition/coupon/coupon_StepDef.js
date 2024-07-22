@@ -18,3 +18,19 @@ When("Add coupon form fill with all the mandatory field", () => {
 Then("Save the add coupon form", () => {
   c.addCouponFormSubmit();
 });
+
+
+Given("Coupon list", () => {
+  l.openURL();
+  l.loginToApplication();
+  l.loginVerify();
+  c.couponList();
+})
+
+When("Click on the delete button", ()=> {
+  c.deleteCoupon();
+})
+
+Then("Coupon is deleted", ()=>{
+  c.verifyAfterDeletion();
+})
